@@ -1,0 +1,92 @@
+.payment {
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment .btn-method, .payment .btn-add-credit, .payment .btn-confirm {
+    display: block;
+    
+    padding: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #004a62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 44vh;
+    
+  }
+  
+  .current-balance .balance-amount{
+    
+    padding: 1rem;
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  
+  .payment-details .input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .suggested-amounts button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #137585;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pix-code img {
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .card-details .input {
+    margin-bottom: 1rem;
+  }
+
+  .leaflet-container {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .payment .btn-method, .payment .btn-add-credit, .payment .btn-confirm {
+      width: 38vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+    .current-balance .balance-amount {
+      width: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+    .payment-details .input {
+      width: 38vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

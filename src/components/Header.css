@@ -1,0 +1,137 @@
+.header {
+  background-color: rgb(6, 31, 48);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  z-index: 1001;
+}
+
+.menu {
+  position: fixed;
+  left: 10px;
+  top: 9vh;
+  color: black;
+  border-radius: 10px;
+  background: #505050;
+  z-index: 1002;
+  padding: 10px;
+}
+
+.menu .nav-link {
+  display: block;
+  padding: 6px 24px;
+  margin-top: 6px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu .nav-link:hover {
+  background-color: #199baf;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-logo {
+  max-width: 90px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 16px;
+}
+
+.user-info span {
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: #137585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+  
+}
+.nav-link {
+  background-color: #137585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+  margin: 5px ;
+  text-decoration: none;
+}
+
+.logout-button, .nav-link:hover {
+  background-color: #0d5e6b;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button {
+    font-size: 1.5em;
+  }
+
+  .user-info {
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .logout-button {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre os botões */
+  }
+}

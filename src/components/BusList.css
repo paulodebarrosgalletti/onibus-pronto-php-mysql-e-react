@@ -1,0 +1,115 @@
+.bus-list {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.bus-row {
+  display: flex;
+  transition: background-color 0.3s;
+  position: relative;
+  border: 1px solid #137585; /* Adiciona uma borda ao redor de cada linha */
+  border-radius: 10px; /* Adiciona cantos arredondados às bordas */
+  margin-bottom: 10px; /* Adiciona espaçamento entre as linhas */
+}
+
+.bus-row:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+.bus-cell {
+  flex: 1;
+  padding: 10px 40px;
+  text-align: center;
+  border-right: 1px solid #137585; /* Adiciona uma borda entre as células */
+}
+
+.bus-cell:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bus-cell:last-child {
+  border-right: none; /* Remove a borda direita da última célula */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.buy-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background-color: #0d5e6b;
+}
+/* Styling for the h2 headers */
+.bus-list h2 {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  margin: 10px 120px;
+  background-color: #137585;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px 50px;
+  border-radius: 50px;
+}
+
+/* Add scrolling for the table */
+.bus-list {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .bus-row {
+    display: flex; /* Mantenha a direção em linha */
+    flex-direction: row; /* Garanta que os itens permaneçam em linha */
+    justify-content: space-between; /* Distribua os itens de forma equidistante */
+    align-items: center; /* Alinhe os itens ao centro */
+    padding: 15px 80px; /* Ajuste o padding para dar mais espaço */
+    border: 1px solid #137585; /* Adiciona uma borda ao redor de cada linha */
+    border-radius: 10px; /* Adiciona cantos arredondados às bordas */
+    margin-bottom: 10px; /* Adiciona espaçamento entre as linhas */
+  }
+
+  .bus-cell {
+    flex: 1; /* Garanta que as células ocupem o mesmo espaço */
+    padding: 0.5rem;
+    text-align: center; /* Garanta que o texto continue centralizado */
+    box-sizing: border-box; /* Inclua padding e border no tamanho total */
+    border-right: 1px solid #137585; /* Adiciona uma borda entre as células */
+  }
+
+  .bus-cell:last-child {
+    border-right: none; /* Remove a borda direita da última célula */
+  }
+
+  .bus-list h2 {
+    display: inline-block; /* Mantenha a exibição em linha */
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

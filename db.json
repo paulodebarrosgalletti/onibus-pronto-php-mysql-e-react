@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "Paulo2224",
+      "email": "123@gmail.com",
+      "password": "123",
+      "id": "1f16",
+      "balance": 207
+    },
+    {
+      "id": "11cc",
+      "name": "Duda",
+      "email": "1234@gmail.com",
+      "password": "123",
+      "balance": 10
+    },
+    {
+      "id": "6807",
+      "name": "Kaue",
+      "email": "kaue@gmail.com",
+      "password": "123",
+      "balance": 90
+    },
+    {
+      "id": "696a",
+      "name": "natalia4",
+      "email": "natalia@gmail.com",
+      "password": "123",
+      "balance": 110
+    },
+    {
+      "id": "d080",
+      "name": "teste5",
+      "email": "teste@gmail.com",
+      "password": "123",
+      "balance": 0
+    }
+  ]
+}

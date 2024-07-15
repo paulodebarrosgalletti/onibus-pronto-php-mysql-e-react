@@ -16,7 +16,7 @@ const Login = ({ onLogin }) => {
       });
       if (response.data.id) {
         setMessage('Login realizado com sucesso!');
-        onLogin(response.data);
+        onLogin(response.data); // Atualiza o estado do usuário no componente pai
       } else {
         setMessage(response.data.error || 'Erro ao fazer login.');
       }
